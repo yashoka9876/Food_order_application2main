@@ -12,6 +12,9 @@ function App() {
   const cartItemHandler=()=>{
     setCartItem((value)=> !value);
   }
+
+  
+
   return (
     <CartProvider>
       {cartItem &&<Cart  onCartItemHandler={cartItemHandler}/>}

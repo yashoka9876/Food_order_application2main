@@ -30,7 +30,12 @@ let DUMMY_ITEMS=[
   ]
 
 const AvailableMeals = () => {
-    const mealsList=DUMMY_ITEMS.map((meal)=><MealItem key={meal.id} name={meal.name} description={meal.description} price={meal.prize}/>)
+    const mealsList=DUMMY_ITEMS.map((meal)=><MealItem 
+    key={meal.id} 
+    id={meal.id}
+    name={meal.name} 
+    description={meal.description} 
+    price={meal.prize}/>)
   return (
     <section className={classes.meals}>
         <ul>
@@ -41,5 +46,7 @@ const AvailableMeals = () => {
     </section>
   )
 }
+
+
 
 export default AvailableMeals
